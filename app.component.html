@@ -1,0 +1,25 @@
+
+
+<div class="container">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>city</td>
+        <td width="200" align="center">Action</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students">
+        <td>{{student.studid}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.city}}</td>
+        <td width="275">
+          <a class="btn btn-success" (click)="editStudent(student.id)">Edit</a>
+          <a class="btn btn-danger" (click)="deleteStudent(student.id)">Delete</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
