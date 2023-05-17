@@ -9,7 +9,7 @@ import { StudentService } from './student.service';
 export class AppComponent implements OnInit {
   name = 'Angular ' + VERSION.major;
   students = [];
-  constructor(private studentService: StudentService) {}
+  constructor(private studentService: studentService) {}
 
   ngOnInit() {
     this.getAllStudents();
